@@ -12,7 +12,7 @@ import os
 # SCREEN
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Idle Jeff Bezos")
-BACKGROUND_IMAGE = pygame.image.load(os.path.join('Assets\Backgrounds', "Background_3.png"))
+BACKGROUND_IMAGE = pygame.image.load(os.path.join('Assets/Backgrounds', "Background_3.png"))
 BACKGROUND = pygame.transform.scale(BACKGROUND_IMAGE, (WIDTH, HEIGHT))
 
 # COLOURS
@@ -49,12 +49,12 @@ SPINNER_SPEED = 2
 
 # MONEY TEXT
 pygame.init()
-MONEY_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', 'Roboto-Medium.ttf'), 25)
+MONEY_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', 'Roboto-Medium.ttf'), 25)
 MONEY_X, MONEY_NUM_X = WIDTH/2-10, WIDTH/2+75
 MONEY_Y, MONEY_NUM_Y = BEZOS_Y - 45, BEZOS_Y - 45
 MONEY_TEXT, MONEY_RECT = MONEY_FONT.render("Money:", WHITE)
 # MONEY PER SECOND TEXT
-MPS_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', 'Roboto-Light.ttf'), 16.4)
+MPS_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', 'Roboto-Light.ttf'), 16.4)
 MPS_X, MPS_NUM_X = WIDTH/2-10, WIDTH/2 + 75
 MPS_Y, MPS_NUM_Y = BEZOS_Y - 45+22, BEZOS_Y - 45+22
 MPS_TEXT, MPS_RECT = MPS_FONT.render("per second:", WHITE)

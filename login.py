@@ -13,12 +13,12 @@ GREEN = (0, 200, 55)
 RED = (255, 0, 0)
 
 # BACKGROUND
-LOGIN_BACKGROUND_IMAGE = pygame.image.load(os.path.join('Assets\Login', "Login_Background.png"))
+LOGIN_BACKGROUND_IMAGE = pygame.image.load(os.path.join('Assets/Login', "Login_Background.png"))
 LOGIN_BACKGROUND = pygame.transform.scale(LOGIN_BACKGROUND_IMAGE, (WIDTH, HEIGHT))
 
 # MAIN TEXT
 pygame.init()
-TITLE_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', "Roboto-Bold.ttf"), 40)
+TITLE_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', "Roboto-Bold.ttf"), 40)
 TITLE = "IDLE JEFF BEZOS"
 title_size = len(TITLE) * 10.5
 TITLE_X = WIDTH/2 - title_size
@@ -26,7 +26,7 @@ TITLE_Y = 20
 TITLE_TEXT, TITLE_RECT = TITLE_FONT.render(TITLE, ORANGE)
 
 # PROMPT TEXT
-PROMPT_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', "Roboto-Medium.ttf"), 25)
+PROMPT_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', "Roboto-Medium.ttf"), 25)
 PROMPT_X = WIDTH/2.8
 USERNAME_PROMPT_Y = HEIGHT/4.5
 PASSWORD_PROMPT_Y = HEIGHT/2.5
@@ -40,12 +40,12 @@ INPUT_BOX_X = WIDTH/5.6
 INPUT_BOX_Y_ADD = 30
 
 # INPUT TEXT
-PROMPT_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', "Roboto-Light.ttf"), 20)
+PROMPT_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', "Roboto-Light.ttf"), 20)
 
 # LOGIN BOX
 LOGIN_BOX_WIDTH, LOGIN_BOX_HEIGHT = 150, 50
 LOGIN_BOX_X, LOGIN_BOX_Y = WIDTH/3.2, HEIGHT / 1.65
-LOGIN_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', "Roboto-Bold.ttf"), 30)
+LOGIN_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', "Roboto-Bold.ttf"), 30)
 LOGIN_TEXT_X, LOGIN_TEXT_Y = LOGIN_BOX_X + LOGIN_BOX_WIDTH/4.5, LOGIN_BOX_Y + LOGIN_BOX_HEIGHT/4.3
 LOGIN_TEXT, LOGIN_TEXT_RECT = LOGIN_FONT.render("LOGIN", ORANGE)
 
@@ -55,7 +55,7 @@ SIGN_UP_TEXT_X, SIGN_UP_TEXT_Y  = LOGIN_BOX_X + LOGIN_BOX_WIDTH / 7, SIGN_UP_BOX
 SIGN_UP_TEXT, SIGN_UP_TEXT_RECT = LOGIN_FONT.render("SIGN UP", ORANGE)
 
 # ERROR MESSAGES
-ERROR_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', "Roboto-Bold.ttf"), 15)
+ERROR_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', "Roboto-Bold.ttf"), 15)
 ERORR_TEXT_X, ERROR_TEXT_Y = WIDTH/20, HEIGHT/1.85 # 1.85
 
 def getUsernameRect() -> object:

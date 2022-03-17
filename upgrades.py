@@ -28,10 +28,10 @@ TOP = 290
 TOP = HEIGHT/1.72
 TRANSLATE = SIDE_LENGTH+5 # 63 + 5 = 68
 
-NAME_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', "Roboto-Bold.ttf"), 15)
-PRICE_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', 'Roboto-Medium.ttf'), 10)
-DESCRIPTION_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', "Roboto-Medium.ttf"), 11)
-TYPE_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', "Roboto-Medium.ttf"), 13)
+NAME_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', "Roboto-Bold.ttf"), 15)
+PRICE_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', 'Roboto-Medium.ttf'), 10)
+DESCRIPTION_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', "Roboto-Medium.ttf"), 11)
+TYPE_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', "Roboto-Medium.ttf"), 13)
 
 def listToUpgrade(l: list) -> object:
     """makes an upgrade with the given tuple"""
@@ -42,7 +42,7 @@ def listToUpgrade(l: list) -> object:
 
 class Upgrade:
     def __init__(self, image_name: str, name: str, type: int, description_lines: str, start_price: float):
-        image = pygame.image.load(os.path.join("Assets\\Upgrades", image_name))
+        image = pygame.image.load(os.path.join("Assets/Upgrades", image_name))
         self.image = pygame.transform.scale(image, (int(SIDE_LENGTH-8), int(SIDE_LENGTH-8)))
 
         self.name = name

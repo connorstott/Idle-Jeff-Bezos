@@ -22,14 +22,14 @@ DARK_GREY = (100, 100, 100)
 BLACK = (0, 0, 0)
 
 pygame.init()
-EMPLOYEE_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', 'Roboto-Medium.ttf'), 15)
-OWNED_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', 'Roboto-Bold.ttf'), 45)
-PRICE_TEXT_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', 'Roboto-Medium.ttf'), 10)
-DESCRIPTION_FONT = pygame.freetype.Font(os.path.join('Assets\Fonts', 'Roboto-Medium.ttf'), 12)
+EMPLOYEE_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', 'Roboto-Medium.ttf'), 15)
+OWNED_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', 'Roboto-Bold.ttf'), 45)
+PRICE_TEXT_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', 'Roboto-Medium.ttf'), 10)
+DESCRIPTION_FONT = pygame.freetype.Font(os.path.join('Assets/Fonts', 'Roboto-Medium.ttf'), 12)
 
 class Employee:
     def __init__(self, image_name: str, name: str, description_lines: str, start_price: float, mps_adder: float, translate: list):
-        image = pygame.image.load(os.path.join("Assets\Employees", image_name))
+        image = pygame.image.load(os.path.join("Assets/Employees", image_name))
         self.image = pygame.transform.scale(image, (43, 50))
 
         self.name = name
